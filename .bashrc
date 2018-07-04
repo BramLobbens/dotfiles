@@ -13,3 +13,5 @@ alias pacq="pacman -Q"
 alias rm="rm -i"
 
 PS1="[\u@\h \W]\$ "
+
+export PATH="packages/dart-sass:$PATH"
