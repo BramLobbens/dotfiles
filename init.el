@@ -17,6 +17,7 @@
     dracula-theme
     py-autopep8
     magit
+    haskell-mode
     ))
 
 (mapc #'(lambda (package)
@@ -37,6 +38,7 @@
 (setq inhibit-startup-message t) ;; hide the startup message
 (load-theme 'dracula t) ;; load theme
 (global-linum-mode t) ;; enable line numbers globally
+(setq column-number-mode t) ;; display column number
 (set-face-attribute 'default nil :font "Monaco-12") ;; set default font
 (menu-bar-mode -1) ;; hide menu bar
 (when (fboundp 'tool-bar-mode) ;; hide tool bar
@@ -70,3 +72,4 @@
           c-basic-offset 4)
 
 ;; init.el ends here
+
