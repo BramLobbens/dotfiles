@@ -1,0 +1,69 @@
+!! .Xresources (reload with $xrdb ~/.Xresources)
+
+!! Appearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.background: #282a36
+urxvt.foreground: #f8f8f2
+!! Font preferences
+urxvt.font: xft:Monaco:pixelsize=18
+urxvt.boldFont: xft:Monaco:pixelsize=18:weight=bold
+urxvt.letterSpace: -1
+!! Larger history limit
+urxvt.saveLines: 1000000
+
+!! Perl extensions
+urxvt.perl-ext-common: default,matcher,font-size
+!! Open urls in browser with Control-Click#282a36
+urxvt.urlLauncher: /usr/bin/firefox
+urxvt.matcher.button: C1
+!! Change font size
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
+URxvt.font-size.step: 4
+!
+! invisibone by baskerville
+!
+! vim: set ft=xdefaults:
+
+URxvt.background: #282a36
+URxvt.foreground: #f8f8f2
+
+URxvt.colorBD:    #CFCFCF
+URxvt.colorUL:    #A0A0A0
+URxvt.colorIT:    #686868
+
+!BLK
+URxvt.color0:     #303030
+URxvt.color8:     #686868
+
+!RED
+URxvt.color9:     #FFA7DA
+URxvt.color1:     #D370A3
+
+!GRN
+URxvt.color10:    #A3D572
+URxvt.color2:     #6D9E3F
+
+!BLU
+URxvt.color12:    #98CBFE
+URxvt.color4:     #6095C5
+
+!YEL
+URxvt.color11:    #EFBD8B
+URxvt.color3:     #B58858
+
+!CYN
+URxvt.color14:    #75DAA9
+URxvt.color6:     #3BA275
+
+!MAG
+URxvt.color13:    #E5B0FF
+URxvt.color5:     #AC7BDE
+
+!WHT
+URxvt.color7:     #CFCFCF
+URxvt.color15:    #FFFFFF
