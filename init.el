@@ -24,7 +24,6 @@
     telephone-line
     anaconda-mode
     racket-mode
-    rainbow-delimiters
     paredit
     ))
 
@@ -82,10 +81,21 @@
 (setq c-default-style "linux"
           c-basic-offset 4)
 
+;; JAVA CONFIGURATION
+;; --------------------------------------
+
+; point to jdee-server
+(setq jdee-server-dir "/home/bram/.emacs.d/jdee-server")
+
+; indentation
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+
 ;; RACKET CONFIGURATION
 ;; --------------------------------------
 
-(require 'rainbow-delimiters-mode)
+;(require 'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook 'rainbow-delimiters-mode)
 (add-hook 'racket-mode-hook           #'enable-paredit-mode)
 
@@ -98,4 +108,3 @@
 (require 'telephone-line)
 (telephone-line-mode 1)
 ;; init.el ends here
-
