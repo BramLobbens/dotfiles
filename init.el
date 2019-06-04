@@ -46,7 +46,7 @@
 (load-theme 'dracula t) ;; load theme
 (global-linum-mode t) ;; enable line numbers globally
 (setq column-number-mode t) ;; display column number
-(set-face-attribute 'default nil :font "Monaco-14") ;; set default font
+(set-face-attribute 'default nil :font "Monaco-12") ;; set default font
 (menu-bar-mode -1) ;; hide menu bar
 (when (fboundp 'tool-bar-mode) ;; hide tool bar
   (tool-bar-mode -1))
@@ -107,4 +107,16 @@
 
 (require 'telephone-line)
 (telephone-line-mode 1)
+
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  (setq web-mode-markup-indent-offset 2)
+  (set-face-attribute 'web-mode-css-rule-face nil :foreground "Pink3")
+  (setq web-mode-enable-css-colorization t)
+  (setq web-mode-ac-sources-alist
+  '(("css" . (ac-source-css-property))
+    ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
+)
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
 ;; init.el ends here

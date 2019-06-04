@@ -1,13 +1,17 @@
 !! .Xresources (reload with $xrdb ~/.Xresources)
 
+!! ibus settings
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+    
 !! Appearance
 urxvt.termName: rxvt-unicode
 urxvt.scrollBar: false
 urxvt.background: #282a36
 urxvt.foreground: #f8f8f2
 !! Font preferences
-urxvt.font: xft:Monaco:pixelsize=18
-urxvt.boldFont: xft:Monaco:pixelsize=18:weight=bold
+urxvt.font: xft:Monaco:pixelsize=14, xft:Kochi Gothic:antialias=true
+urxvt.boldFont: xft:Monaco:pixelsize=14:weight=bold, xft:Kochi Gothic:antialias=true
 urxvt.letterSpace: -1
 !! Larger history limit
 urxvt.saveLines: 1000000
